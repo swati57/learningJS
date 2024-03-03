@@ -26,3 +26,21 @@ const myFun = function(){
 //type of null is object
 console.log(typeof null); //object
 console.log(typeof myFun); //function
+
+//stack(primitive), heap memory(non primitive)
+
+//stack
+let name = "Swati"
+let newName = name //copy of name is created as its primitive datatype
+newName="Sweta"
+console.log(name);
+console.log(newName);
+
+//heap provides reference of object 
+let user = {
+    name: "Swati",
+    ahe: 22
+};
+let user1 = user
+user1.name = "Abhay"
+console.log(`${user.name} ${user1.name}`);
