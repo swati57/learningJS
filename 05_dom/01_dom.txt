@@ -1,0 +1,62 @@
+console.log(document)
+console.log(document.baseURI)
+console.log(document.links)
+
+console.log(document.links[2])
+
+console.log(document.getElementById('firstHeading'))
+document.getElementById('firstHeading').innerHTML = "<h1>Hello World</h1>"
+
+document.getElementById("title").getAttribute("id")
+
+document.getElementById("title").setAttribute("class","test heading")
+
+const title = document.getElementById("title")
+title.style.color = 'blue'
+
+title.textContent, title.innerHTML, title.innerText:
+all displays the text inside title
+
+Diff b/w innerText and textContent:
+innerText displays only the text visible on the screen
+textContent displays all the content of title, whether it's currently rendered or not
+innerHTML displays complete content along with html tags 
+
+document.querySelector('h4') //select first h4
+
+document.querySelector('#title') //selct first title id
+
+document.querySelector('.heading')  //select first heading class
+
+document.querySelector('input[type="password]')
+
+const myul = document.querySelector('ul')
+const turnGreen = myul.querySelector('li')
+turnGreen.style.color = 'green'
+turnGreen.innerText = "hello"
+
+//gives a node list of element != array so map and others cant be used to loop
+const lilist = document.querySelectorAll('li')
+lilist.style.color = 'green' //cant be done
+lilist[0].style.color ='green'
+lilist.forEach(function(l) {
+    l.style.backgroundColor= 'green'
+})
+
+const tempClassList = document.getElementsByClassName('list-item')
+//returns HTMl collection so foreach loop cant be used
+//convert to array
+const convertedArr = Array.from(tempClassList)
+//now style can be changed through loop
+convertedArr.forEach(function(li){
+    li.style.color='orange'
+})
+
+const myH2=document.querySelectorAll('.mw-headline')
+myH2.forEach(function(h){
+    h.style.backgroundColor='green';
+    h.innerText='Swati' //manipulate
+})
+
+
+
