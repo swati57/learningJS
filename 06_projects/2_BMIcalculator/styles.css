@@ -1,0 +1,46 @@
+html {
+    margin: 0;
+}
+
+.container {
+    background-color: aquamarine;
+    height: 900px;
+    width: 600px;
+    padding: 15px;
+    text-align: center;
+}
+
+#height,#weight {
+    width: 150px;
+    height: 25px;
+    margin-top: 30px;
+}
+
+#weight-guide {
+    margin: 25px 0 0 75px;
+}
+
+input {
+    margin-left: 10px;
+}
+
+#results {
+    font-size: 35px;
+    margin: 20px 0 0 90px;
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    margin: 25px 0 0 90px;
+    background-color: #fff;
+    padding: 1px 30px;
+    border-radius: 8px;
+    color: #212121;
+    text-decoration: none;
+    border: 2px solid #212121;
+}
+
+h1 {
+    padding: 25px 0 0 15px;
+}
