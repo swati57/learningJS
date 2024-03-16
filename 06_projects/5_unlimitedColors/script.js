@@ -13,7 +13,6 @@ let intervalId
 const startChangingColor = function(){
     if(!intervalId)
     intervalId=setInterval(change,1000);
-
     function change(){
     document.body.style.backgroundColor = randomColor();
     }
