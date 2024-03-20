@@ -34,7 +34,8 @@ JS code file
    For variables they are 'undefined' and for functions they are set to their function definition
 3. Execution Phase(variables values updated-> function execution context created for each fun -> new variable env + execution thread; 
     again memory phase and execution phase for those fun separately, and value returned to parent execution context, now this fun execution context deleted)
-   After the creation phase completed, the execution phase begins where actual values of the variables are set. And when the functions are called it creates a new 'Function Execution' context which consists of two phases (they works same as explained above but only for the particular function scope):
+   After the creation phase completed, the execution phase begins where actual values of the variables are set. And when the functions are called it creates a new 'Function Execution' context 
+   which consists of two phases (they works same as explained above but only for the particular function scope):
     1. Memory phase 
     2. Execution phase 
     📝The return value of the 'Function Execution' context is passed to the Global Execution Context

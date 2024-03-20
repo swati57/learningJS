@@ -25,12 +25,14 @@ one()
 
 //+++++++interesting
 console.log(addOne(5)); //fun call before definition works here
+//named func
 function addOne(num) {
     return num+1
 }
 
 //fun call before definition does not works 
-//hoisiting, execution context
+//hoisting, execution context
+//anonymous func
 const addTwo = function(num){
     return num+2
 }

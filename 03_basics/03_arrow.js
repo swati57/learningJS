@@ -8,11 +8,11 @@ const user = {
     }
 }
 
-// user.welcomeMsg()
-// user.username = "sam" //changed context
-// user.welcomeMsg()
+user.welcomeMsg()
+user.username = "sam" //changed context
+user.welcomeMsg()
 
-// console.log(this);  //empty object in global
+console.log(this);  //empty object in global
 
 // function one()
 // {
